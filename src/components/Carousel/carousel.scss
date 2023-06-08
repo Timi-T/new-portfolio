@@ -1,0 +1,54 @@
+.project-list {
+  @apply w-full flex items-center justify-around;
+}
+
+.project-carousel {
+  @apply absolute h-[300px] top-0 flex items-start justify-around w-full overflow-hidden ml-10 mt-10;
+}
+
+.carousel-box {
+  @apply h-[50px] bg-[#e75f6b] w-[150px] xl:w-[180px] 2xl:w-[200px] border-[1px] border-opacity-30 border-[#e75f6b] rounded-lg flex items-center justify-center;
+
+  color: white;
+  /* color: #e4878f; */
+  font-size: 12px;
+  font-weight: 400;
+
+  @media screen and (min-width: 1760px) {
+    width: 250px;
+  }
+
+  svg {
+    fill: white;
+    scale: 0.8;
+    width: 20px;
+  }
+}
+
+.carousel-info {
+  @apply absolute flex flex-col bg-white top-0 left-0 h-[170px] w-[270px] 2xl:w-[300px] border-[1px] border-[#e75f6b] border-opacity-30 p-5 rounded-lg;
+
+  color: #e75f6b;
+  font-weight: 400;
+  font-size: 13px;
+  opacity: 0;
+  z-index: 999;
+
+  @media screen and (min-width: 1760px) {
+    width: 320px;
+  }
+
+  .row {
+    @apply w-full flex gap-2;
+
+    p {
+      @apply relative text-start;
+      font-weight: 800;
+      width: 45px;
+
+      span {
+        @apply absolute right-0;
+      }
+    }
+  }
+}

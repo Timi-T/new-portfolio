@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+import CV from "./components/CV/Cv";
+import { Route, Routes } from "react-router-dom";
+import { PageProvider } from "./contexts/PageContext";
+import { useEffect } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageProvider>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/cv" element={<CV />}></Route>
+      </Routes>
+    </PageProvider>
   );
 }
 

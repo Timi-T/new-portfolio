@@ -1,0 +1,38 @@
+.projects {
+  @apply absolute -left-[100%] top-0 min-h-[100vh] text-black w-full flex flex-col items-center justify-between;
+
+  &__header {
+    @apply mt-20;
+
+    h1 {
+      @apply uppercase;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &__display {
+    @apply relative min-h-[500px] w-full px-10 flex items-center justify-between;
+
+    &-cards {
+      @apply relative w-full h-full flex items-center gap-5;
+    }
+
+    &-mobileCards {
+      @apply w-full h-[500px] flex flex-col gap-5;
+    }
+  }
+}
+
+.project-card {
+  @apply absolute h-[240px] w-[270px] px-7 py-2 shadow-lg border-[0.5px] cursor-pointer bg-white;
+  border: 2px solid rgba(255, 255, 255, 0.208);
+  border-radius: 10px;
+  color: #e75f6b;
+}
+
+.preview-card {
+  @apply absolute h-[240px] w-[270px] px-4 py-2 shadow-lg border-[0.5px] cursor-pointer bg-white;
+  border: 2px solid rgba(255, 255, 255, 0.208);
+  border-radius: 10px;
+}

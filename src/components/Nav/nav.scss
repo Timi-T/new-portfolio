@@ -1,0 +1,19 @@
+.nav-controls {
+  @apply fixed top-0 left-[calc(100vw-60px)] h-[100vh] w-[60px] bg-white shadow-md z-[999] flex flex-col justify-center items-center gap-5;
+
+  .control {
+    @apply bg-[white] h-[40px] w-[40px] rounded-lg shadow-md;
+
+    svg {
+      fill: #e75f6b;
+    }
+  }
+
+  .active-btn {
+    @apply bg-[#e75f6b];
+
+    svg {
+      fill: white;
+    }
+  }
+}

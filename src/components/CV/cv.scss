@@ -1,0 +1,100 @@
+.cv {
+  @apply w-full flex flex-col min-h-[100vh] bg-white p-[60px];
+
+  -webkit-text-stroke-width: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Source Serif Pro', serif;
+  letter-spacing: 1px;
+  color: #00212d;
+
+  &__header {
+    @apply w-full flex items-center justify-between;
+
+    &_name {
+      @apply w-[50%] flex items-center gap-5;
+
+      .initials {
+        @apply h-[70px] w-[70px] flex justify-end items-end p-2 bg-[#0A54FF] text-white text-[20px] leading-[20px];
+      }
+
+      .name-text {
+        @apply w-[150px] text-[20px] leading-[25px] text-[#0A54FF] uppercase;
+        font-weight: 200;
+        letter-spacing: 3px;
+      }
+    }
+
+    &_details {
+      @apply w-[40%] flex flex-col items-start text-[14px];
+
+      .links {
+        @apply w-[40%] flex gap-10 justify-start items-center text-[14px] mt-1;
+
+        a {
+          @apply flex items-center gap-1;
+        }
+      }
+    }
+  }
+
+  &__body {
+    &_experience, &_skills, &_education, &_projects {
+      ul {
+        list-style-type: disc;
+        list-style-position: inside;
+  
+        p {
+          @apply capitalize;
+  
+          span {
+            font-weight: 600;
+          }
+        }
+  
+        li {
+          @apply ml-2;
+        }
+      }
+
+      .skills-list {
+        @apply flex items-center gap-[200px] capitalize;
+
+        li {
+          @apply mt-2;
+        }
+      }
+
+      .cv-projects {
+        li {
+          @apply capitalize;
+
+          font-weight: 600;
+
+          p {
+            @apply ml-6;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    @apply mt-7;
+
+    .title {
+      @apply w-full uppercase text-[15px] text-[#0A54FF] border-b-[1.5px] border-b-black pb-1;
+      
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+    }
+
+    .text {
+      @apply max-w-[95%] mt-2 text-[15px];
+
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Fira+Sans&family=Inter:wght@300&family=Source+Serif+Pro:wght@300&family=Supermercado+One&display=swap");
+
+.landing {
+  /* background-image: url('../../assets/img/black_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  @apply absolute h-[100vh] w-full top-0 -left-[100%];
+
+  color: #e75f6b;
+
+  &__container {
+    @apply w-full h-full flex justify-between items-center text-black;
+    .main-container {
+      @apply w-full h-full flex flex-col items-center justify-center px-2;
+      h1 {
+        @apply text-center;
+        font-size: 1.3rem;
+        font-weight: 400;
+        @media screen and (min-width: 765px) {
+          font-size: 2rem;
+        }
+      }
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        span {
+          color: #e75f6b;
+          font-weight: 600;
+        }
+        @media screen and (min-width: 765px) {
+          font-size: 1.2rem;
+        }
+      }
+      .quote {
+        @apply absolute bottom-20 text-center px-5;
+        span {
+          color: #e75f6b;
+        }
+      }
+      .creative {
+        color: #e75f6b;
+        /* font-size: 25px;
+        line-height: 22px; */
+      }
+      .name-cursor {
+        @apply border-b border-b-[black] border-b-[2px] h-7 md:h-10 w-3 md:w-4;
+      }
+      .name {
+        @apply md:h-[60px];
+      }
+    }
+  }
+  .trans-text {
+  }
+}

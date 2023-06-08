@@ -1,0 +1,58 @@
+.skills {
+  @apply bg-black h-[100vh] w-full text-white px-20 py-10;
+  font-size: 18px;
+
+  .top-section {
+    @apply flex flex-col gap-0;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .languages {
+      @apply flex justify-between;
+    }
+  }
+
+  .mid-section {
+    @apply flex justify-between mt-10;
+
+    .frontend {
+      h1 {
+        font-size: 25px;
+      }
+    }
+
+    .soft-skills {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .bottom-section {
+    @apply flex flex-col gap-5 mt-20;
+    font-size: 14px;
+    h1 {
+      font-size: 22px;
+      align-self: center;
+    }
+
+    .backend {
+      h1 {
+        font-size: 18px;
+      }
+      ul {
+        @apply grid grid-cols-5;
+      }
+    }
+    .devops {
+      h1 {
+        font-size: 18px;
+      }
+      ul {
+        @apply grid grid-cols-5;
+      }
+    }
+  }
+}

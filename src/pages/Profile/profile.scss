@@ -1,0 +1,117 @@
+.profile {
+  @apply absolute w-full top-0 -left-[100%];
+  .profile-con {
+    @apply bg-white min-h-[100vh] py-10 px-5 md:px-10 mr-10;
+  }
+
+  .prof-summary {
+    @apply flex flex-col gap-2 mb-10;
+
+    h1 {
+      @apply uppercase;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      @apply text-justify;
+
+      font-size: 14px;
+    }
+  }
+
+  .timeline-title {
+    @apply uppercase mt-20;
+
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .timeline {
+    @apply grid grid-cols-1 md:grid-cols-2 md:grid-flow-col gap-10;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    .edu-timeline,
+    .work-timeline {
+      @apply flex flex-col;
+    }
+
+    &-item {
+      @apply relative flex flex-col gap-3 pl-12 border-l-[1px] border-opacity-30 ml-5 pb-3;
+
+      .tl-duration {
+        @apply shadow-md rounded-lg py-1 px-3 w-[160px] mt-3;
+
+        font-size: 14;
+        font-weight: 500;
+      }
+
+      .tl-icon {
+        @apply absolute w-12 h-12 left-0 bg-white rounded-full shadow-lg -ml-6 flex items-center justify-center;
+
+        svg {
+          fill: #e75f6b;
+          scale: 0.35;
+        }
+      }
+
+      h5 {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        span {
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .tech-stack,
+  .my-story {
+    @apply flex items-center gap-5 mb-5;
+
+    font-size: 14px;
+
+    h3 {
+      @apply w-[150px] border-r-[1px] border-opacity-50 pr-5 uppercase;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .stack-items {
+      @apply grid grid-cols-2 md:grid-cols-5 xl:grid-cols-9 gap-3;
+    }
+
+    .stack-item {
+      @apply bg-white w-[80px] h-[65px] rounded-lg border-[0.5px] border-[#e75f6b] border-opacity-30 pt-3 pb-1 px-2 flex flex-col items-center justify-between gap-2;
+
+      font-size: 10px;
+      color: #e75f6b;
+
+      .tool-icon {
+        @apply w-5;
+        svg {
+          fill: #e75f6b;
+          scale: 1.2;
+        }
+      }
+    }
+  }
+
+  .journey-cta {
+    @apply bg-[#e75f6b] text-white px-3 py-1 rounded-sm max-w-[170px];
+
+    font-size: 12px;
+  }
+}
+
+.cancel-btn {
+  svg {
+    fill: white;
+    scale: 100;
+  }
+}
