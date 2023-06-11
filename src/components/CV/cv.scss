@@ -5,7 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   letter-spacing: 1px;
   color: #00212d;
 
@@ -16,21 +16,31 @@
       @apply w-[50%] flex items-center gap-5;
 
       .initials {
-        @apply h-[70px] w-[70px] flex justify-end items-end p-2 bg-[#0A54FF] text-white text-[20px] leading-[20px];
+        @apply h-[70px] w-[70px] flex justify-end items-end p-2 bg-[#0A54FF];
+        color: white;
+        font-size: 20px;
+        line-height: 20px;
       }
 
       .name-text {
-        @apply w-[150px] text-[20px] leading-[25px] text-[#0A54FF] uppercase;
+        @apply w-[150px] uppercase;
+        color: #0a54ff;
+        font-size: 20px;
         font-weight: 200;
+        line-height: 25px;
         letter-spacing: 3px;
       }
     }
 
     &_details {
-      @apply w-[40%] flex flex-col items-start text-[14px];
+      @apply w-[40%] flex flex-col items-start;
+
+      font-size: 14px;
 
       .links {
-        @apply w-[40%] flex gap-10 justify-start items-center text-[14px] mt-1;
+        @apply w-[40%] flex gap-10 justify-start items-center mt-1;
+
+        font-size: 14px;
 
         a {
           @apply flex items-center gap-1;
@@ -40,19 +50,22 @@
   }
 
   &__body {
-    &_experience, &_skills, &_education, &_projects {
+    &_experience,
+    &_skills,
+    &_education,
+    &_projects {
       ul {
         list-style-type: disc;
         list-style-position: inside;
-  
+
         p {
           @apply capitalize;
-  
+
           span {
             font-weight: 600;
           }
         }
-  
+
         li {
           @apply ml-2;
         }
@@ -85,14 +98,19 @@
     @apply mt-7;
 
     .title {
-      @apply w-full uppercase text-[15px] text-[#0A54FF] border-b-[1.5px] border-b-black pb-1;
-      
-      font-family: 'Fira Sans', sans-serif;
+      @apply w-full uppercase border-b-[1.5px] border-b-black pb-1;
+
+      font-size: 15px;
+      color: #0a54ff;
+
+      font-family: "Fira Sans", sans-serif;
       font-weight: 600;
     }
 
     .text {
-      @apply max-w-[95%] mt-2 text-[15px];
+      @apply max-w-[95%] mt-2;
+
+      font-size: 15px;
 
       font-weight: 500;
     }

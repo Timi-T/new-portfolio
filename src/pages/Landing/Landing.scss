@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Fira+Sans&family=Inter:wght@300&family=Source+Serif+Pro:wght@300&family=Supermercado+One&display=swap");
 
 .landing {
-  /* background-image: url('../../assets/img/black_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
   @apply absolute h-[100vh] w-full top-0 -left-[100%];
 
   color: #e75f6b;
@@ -39,14 +36,14 @@
       }
       .creative {
         color: #e75f6b;
-        /* font-size: 25px;
-        line-height: 22px; */
       }
       .name-cursor {
         @apply border-b border-b-[black] border-b-[2px] h-7 md:h-10 w-3 md:w-4;
       }
       .name {
-        @apply md:h-[60px];
+        @media screen and (min-width: 765px) {
+          height: 60px;
+        }
       }
     }
   }
