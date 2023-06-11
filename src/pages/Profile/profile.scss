@@ -1,5 +1,8 @@
 .profile {
-  @apply absolute w-full top-0 -left-[100%];
+  @apply absolute w-full top-0;
+
+  left: -100%;
+
   .profile-con {
     @apply bg-white min-h-[100vh] py-10 px-5 md:px-10 mr-10;
   }
